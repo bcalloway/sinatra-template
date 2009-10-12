@@ -1,0 +1,11 @@
+%form{:id => "user_form", :method => "post", :action => "/update/#{params[:id]}"}
+  %p
+    %strong 
+      User Name
+    %br
+    %input{:id => "name", :name => "name", :type => "text", :value => "#{@user.name}"}
+
+  %p
+    %input{:type => "submit", :value => "Update Record"}
+    or
+    %a{:href => '/'} Cancel

@@ -1,0 +1,11 @@
+%form{:id => "user_form", :method => "post", :action => "/create"}
+  %p
+    %strong 
+      User Name
+    %br
+    %input{:id => "name", :name => "name", :type => "text", :value => ""}
+
+  %p
+    %input{:type => "submit", :value => "Create Record"}
+    or
+    %a{:href => '/'} Cancel

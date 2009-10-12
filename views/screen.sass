@@ -1,0 +1,86 @@
+body
+  :font-family Georgia, Arial, sans-serif
+  :font-size 14px
+  :background-color #999
+  
+#wrapper
+  :width 900px
+  :margin 0 auto
+  :background-color #ddd
+  :border 1px solid #000
+  :margin-top 50px
+  
+#flash
+  :clear both
+  :position relative
+
+=flash-box
+  :-moz-border-radius 3px
+  :-webkit-border-radius 3px
+  :text-align center
+  :margin 0 auto 15px
+  :padding 5px
+  :height 32px
+  span
+    :display block
+    :padding-top 10px
+    :font-size 13px
+    :width 900px
+    :margin 0 auto
+    :text-align center
+
+#flash.error
+  +flash-box
+  :border 1px solid #fbb
+  :color #990000
+  :background #fdd url('../images/flash-error.png') no-repeat 10px 5px
+
+#flash.warning
+  +flash-box
+  :border 1px solid #fffaaa
+  :background #ffffcc url('../images/flash-warning.png') no-repeat 10px 5px
+  :color #996600
+
+#flash.notice
+  +flash-box
+  :background #BBFFB6 url('../images/flash-check.png') no-repeat 10px 5px
+  :padding 5px
+  :color #006600
+  :border 2px solid #008040
+
+h1
+  :font-size 24px
+
+p
+  :margin-bottom 10px
+  
+#content
+  :padding 10px
+
+  #button
+    :margin 20px
+    a
+      :background-color #008040
+      :padding 5px
+      :border 1px solid #174418
+      
+      &:link, &:visited
+        :color #fff
+        :text-decoration none
+      &:hover
+        :color #fff
+        :text-decoration underline
+        
+table.table
+  tr
+    :height 30px
+  th, td
+    :padding 10px
+
+  a
+    &:link, &:visited
+      :color #0413FF
+      :text-decoration none
+    &:hover
+      :color #004080
+      :text-decoration underline  
