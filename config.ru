@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'vault'
+require 'user'
 
 set :env, (ENV['RACK_ENV'] ? ENV['RACK_ENV'].to_sym : :production)
 
