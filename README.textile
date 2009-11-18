@@ -1,0 +1,5 @@
+h1.  Sinatra Template
+
+Simple base template to get a small Sinatra app up and running quickly.
+
+Copyright (c) 2009 Brandon Calloway, released under the MIT License
